@@ -11,9 +11,9 @@ phases:
       - zip -r9 ../deployment_package.zip .
       - cd ..
       - zip -g deployment_package.zip lambda_function.py
-  artifacts:
-    files:
-      - deployment_package.zip
+artifacts:
+  files:
+    - deployment_package.zip
   # post_build:
   #   commands:
   #     - aws lambda update-function-code --function-name tecemer-devops --zip-file fileb://deployment_package.zip
