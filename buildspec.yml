@@ -4,12 +4,12 @@ phases:
     runtime-versions:
       python: 3.12
     commands:
-      - pip install -r requirements.txt -t lib
+      # - pip install -r requirements.txt -t lib
   build:
     commands:
-      - cd lib
-      - zip -r9 ../deployment_package.zip .
-      - cd ..
+      # - cd lib
+      # - zip -r9 ../deployment_package.zip .
+      # - cd ..
       - zip -g deployment_package.zip lambda_function.py
 artifacts:
   files:
